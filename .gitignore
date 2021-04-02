@@ -4,3 +4,10 @@ Library/
 ProjectSettings/
 Temp/
 UnityPackageManager/
+
+*.csproj
+*.vsconfig
+xs/
+Logs/
+obj/
+UserSettings/
