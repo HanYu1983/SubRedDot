@@ -5,14 +5,20 @@ using UnityEngine;
 public class CompFrontUI : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    
+
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
+
+        
+
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnChangePage()
     {
-        
+        GetComponent<Canvas>().worldCamera = Camera.main;
     }
 }

@@ -20,13 +20,17 @@ public class CompChangeScene : MonoBehaviour
     public Page startPage;
 
     public static CompChangeScene inst;
+    public CompFrontUI ui;
 
     void Start()
     {
-        inst = this;
+        if(inst == null)
+        {
+            inst = this;
 
-        onLoadSceneComplete = new Action<AsyncOperation>(doLoadSceneComplete);
-        DontDestroyOnLoad(this.gameObject);
+            onLoadSceneComplete = new Action<AsyncOperation>(doLoadSceneComplete);
+            DontDestroyOnLoad(this.gameObject);
+        }
 
         if(startPage == Page.INIT)
         {
@@ -54,6 +58,7 @@ public class CompChangeScene : MonoBehaviour
     void doLoadSceneComplete(AsyncOperation ao)
     {
         ao.completed -= onLoadSceneComplete;
+        ui.OnChangePage();
     }
 
 }

@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPage: 0
+  ui: {fileID: 642284605}
 --- !u!4 &519366793
 Transform:
   m_ObjectHideFlags: 0
@@ -309,7 +310,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1624026091}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 90
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -713,7 +714,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 215.1}
+  m_SizeDelta: {x: 1920, y: 217.87}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1873304624
 MonoBehaviour:
