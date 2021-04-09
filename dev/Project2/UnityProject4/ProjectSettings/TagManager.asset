@@ -50,3 +50,6 @@ TagManager:
   - name: "\u524D\u666F"
     uniqueID: 950462189
     locked: 0
+  - name: "\u6700\u524D\u666F"
+    uniqueID: 804356393
+    locked: 0
