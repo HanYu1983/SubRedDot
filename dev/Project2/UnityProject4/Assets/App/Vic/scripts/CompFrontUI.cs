@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Keep))]
 public class CompFrontUI : MonoBehaviour
 {
 

@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(Keep))]
 public class CompChangeScene : MonoBehaviour
 {
     Action<AsyncOperation> onLoadSceneComplete;
@@ -21,7 +20,6 @@ public class CompChangeScene : MonoBehaviour
             inst = this;
 
             onLoadSceneComplete = new Action<AsyncOperation>(doLoadSceneComplete);
-            DontDestroyOnLoad(this.gameObject);
         }
 
         ChangePage(startPage);
