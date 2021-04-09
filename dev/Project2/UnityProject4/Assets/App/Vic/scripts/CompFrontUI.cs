@@ -2,20 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Keep))]
 public class CompFrontUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    
-
-    void Start()
-    {
-        DontDestroyOnLoad(this.gameObject);
-
-        
-
-        
-    }
 
     public void OnChangePage()
     {

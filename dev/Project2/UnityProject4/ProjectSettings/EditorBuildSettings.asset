@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/App/Vic/scenes/initPage.unity
+    path: Assets/App/initPage.unity
     guid: 37069017f90b6ee4f9b1dfa17682c7b2
   - enabled: 1
     path: Assets/App/Vic/scenes/mainPage.unity

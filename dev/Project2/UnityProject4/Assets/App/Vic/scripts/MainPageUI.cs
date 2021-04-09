@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MainPageUI : MonoBehaviour
 {
-    public void OnMainPageStartClick()
+    public void OnMainPageStartClick(string page)
     {
-        CompChangeScene.inst.JumpGamePage();
+        CompChangeScene.inst.ChangePage(page);
     }
 }

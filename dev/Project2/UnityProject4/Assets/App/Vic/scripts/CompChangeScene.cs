@@ -5,19 +5,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-
-[System.Serializable]
-public enum Page
-{
-    INIT,
-    MAIN,
-    GAME
-}
-
+[RequireComponent(typeof(Keep))]
 public class CompChangeScene : MonoBehaviour
 {
     Action<AsyncOperation> onLoadSceneComplete;
-    public Page startPage;
+    public string startPage;
 
     public static CompChangeScene inst;
     public CompFrontUI ui;
@@ -32,27 +24,18 @@ public class CompChangeScene : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
 
-        if(startPage == Page.INIT)
-        {
-            startPage = Page.MAIN;
-        }
         ChangePage(startPage);
     }
 
-    public void ChangePage(Page page)
+    public void ChangePage(string page)
     {
-        AsyncOperation ao = SceneManager.LoadSceneAsync((int)page);
-        ao.completed += onLoadSceneComplete;
-    }
-
-    public void JumpMainPage()
-    {
-        ChangePage(Page.MAIN);
-    }
-
-    public void JumpGamePage()
-    {
-        ChangePage(Page.GAME);
+        string[] tmp = page.Split(char.Parse("/"));
+        string pageName = tmp[tmp.Length - 1];
+        if(pageName != SceneManager.GetActiveScene().name)
+        {
+            AsyncOperation ao = SceneManager.LoadSceneAsync(page);
+            ao.completed += onLoadSceneComplete;
+        }
     }
 
     void doLoadSceneComplete(AsyncOperation ao)
