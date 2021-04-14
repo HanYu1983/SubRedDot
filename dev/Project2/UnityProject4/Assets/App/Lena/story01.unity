@@ -1103,7 +1103,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 642514526}
   selectedCommands:
-  - {fileID: 642514613}
+  - {fileID: 642514619}
   variables:
   - {fileID: 642514550}
   - {fileID: 642514598}
@@ -1982,7 +1982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 190.63014
+    x: 189.26028
     y: 138
     width: 106.16437
     height: 40
@@ -5161,7 +5161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 154
   indentLevel: 0
-  storyText: "\u4F60\u518D\u4E5F\u7121\u6CD5\u64C1\u6709\u7E7C\u6210\u6B0A!"
+  storyText: "\u4F60\u518D\u4E5F\u7121\u6CD5\u64C1\u6709\u7E7C\u627F\u6B0A!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
