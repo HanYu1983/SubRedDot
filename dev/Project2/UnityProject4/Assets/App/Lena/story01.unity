@@ -987,6 +987,12 @@ GameObject:
   - component: {fileID: 642514616}
   - component: {fileID: 642514615}
   - component: {fileID: 642514617}
+  - component: {fileID: 642514609}
+  - component: {fileID: 642514619}
+  - component: {fileID: 642514618}
+  - component: {fileID: 642514614}
+  - component: {fileID: 642514613}
+  - component: {fileID: 642514611}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1097,7 +1103,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 642514526}
   selectedCommands:
-  - {fileID: 642514608}
+  - {fileID: 642514613}
   variables:
   - {fileID: 642514550}
   - {fileID: 642514598}
@@ -2030,7 +2036,12 @@ MonoBehaviour:
   - {fileID: 642514585}
   - {fileID: 642514572}
   - {fileID: 642514584}
+  - {fileID: 642514618}
+  - {fileID: 642514614}
   - {fileID: 642514612}
+  - {fileID: 642514613}
+  - {fileID: 642514611}
+  - {fileID: 642514619}
   - {fileID: 642514560}
   - {fileID: 642514557}
   - {fileID: 642514606}
@@ -2040,6 +2051,7 @@ MonoBehaviour:
   - {fileID: 642514617}
   - {fileID: 642514610}
   - {fileID: 642514608}
+  - {fileID: 642514609}
   suppressAllAutoSelections: 0
 --- !u!114 &642514527
 MonoBehaviour:
@@ -4836,6 +4848,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 143
   indentLevel: 0
+--- !u!114 &642514609
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 153
+  indentLevel: 0
+  targetFlowchart: {fileID: 642514498}
+  targetBlock: {fileID: 0}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &642514610
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4850,6 +4883,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 146
   indentLevel: 0
+--- !u!114 &642514611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 158
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1574727021}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  easeType: 24
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: -50, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &642514612
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4864,7 +4932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 149
   indentLevel: 0
-  storyText: "\u672C\u5DEB\u5E2B\u8AAA\u5230\u505A\u5230!"
+  storyText: "\u4F9D\u7167\u90A3\u8001\u982D\u5B9A\u7684\u570B\u5BB6\u6CD5\u5F8B,\u5973\u4EBA\u662F\u7121\u6CD5\u5750\u4E0A\u738B\u4F4D\u7684!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4877,6 +4945,76 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &642514613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 157
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1574727021}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  easeType: 23
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 50, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &642514614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 156
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1574727021}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  easeType: 24
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: -50, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
 --- !u!114 &642514615
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4962,6 +5100,68 @@ MonoBehaviour:
   itemId: 152
   indentLevel: 0
   storyText: "\u4E0D\u77E5\u9053\u8A72\u5982\u4F55\u662F\u597D......"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &642514618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 598f181ee459641a9b0a5849fbc3240c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 155
+  indentLevel: 0
+  _targetObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1574727021}
+  _tweenName:
+    stringRef: {fileID: 0}
+    stringVal: 
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.5
+  easeType: 23
+  loopType: 0
+  stopPreviousTweens: 0
+  waitUntilFinished: 1
+  targetObjectOLD: {fileID: 0}
+  tweenNameOLD: 
+  durationOLD: 0
+  _offset:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 50, z: 0}
+  space: 1
+  offsetOLD: {x: 0, y: 0, z: 0}
+--- !u!114 &642514619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 154
+  indentLevel: 0
+  storyText: "\u4F60\u518D\u4E5F\u7121\u6CD5\u64C1\u6709\u7E7C\u6210\u6B0A!"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
