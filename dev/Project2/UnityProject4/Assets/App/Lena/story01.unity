@@ -5259,7 +5259,7 @@ GameObject:
   - component: {fileID: 698098428}
   - component: {fileID: 698098427}
   m_Layer: 0
-  m_Name: "\u5DEB\u5E2B"
+  m_Name: witch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
