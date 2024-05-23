@@ -1110,6 +1110,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6563791145163177328, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563791145163177328, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563791145163177328, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -417
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563791145163177341, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6563791145163177342, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1265,5 +1285,20 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 543616251}
+    - target: {fileID: 6563791145843216554, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563791145843216554, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563791145843216554, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -484
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d20aab9dfc7da4a46aaeaee2ef0feb59, type: 3}
