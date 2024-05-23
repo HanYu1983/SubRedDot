@@ -9,6 +9,9 @@ particle-resources/works/UnityProject4/
 ### run
     runUnityProject4Webgl.bat
 ## android
+### develop
+打開[https://www.youtube.com/watch?v=kvyuD8U18o0&t=59s](手機開發人員選項), 將USB偵錯打開, 就可以在UNITY中Build And Run了
+
 ### build path
 任意
 將apk上傳到GCP的google storage
