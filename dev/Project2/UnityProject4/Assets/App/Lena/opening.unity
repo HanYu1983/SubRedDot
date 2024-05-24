@@ -158,7 +158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d90cead5b23751c4d8d13a83a8388329, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bdf859ac741858d4dabb5853e6b0833f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1057,13 +1057,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3ac43d4c6f055fe42921ae9d9704b715, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 786b8c6b4397143448897d31478a8ce1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8fdb9e8b43d9bf04c8fdd3c664e03ed1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f5bb9638b980b8e4a8693e2477bf33eb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c008498497bea24c91e9c163af1215e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1832,7 +1832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1876b8bb1c71ee640ae26622154a97dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 081c649fd72722d4ca68ad3eff21c92d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2456,6 +2456,7 @@ GameObject:
   - component: {fileID: 1722783155}
   - component: {fileID: 1722783156}
   - component: {fileID: 1722783157}
+  - component: {fileID: 1722783158}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -2489,8 +2490,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1722782899}
-  selectedCommands:
-  - {fileID: 1722783118}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2567,6 +2567,7 @@ MonoBehaviour:
   - {fileID: 1722782789}
   - {fileID: 1722782785}
   - {fileID: 1722782799}
+  - {fileID: 1722783158}
   - {fileID: 1722782796}
   - {fileID: 1722782786}
   - {fileID: 1722782788}
@@ -3093,7 +3094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: "\u4E00\u540D\u767D\u9AEE\u7684\u7537\u5B50\u7AD9\u5728\u5BB4\u6703\u5EF3\u7684\u9AD8\u8655\uFF0C\u82F1\u4FCA\u7684\u9762\u9F90\u4FDD\u990A\u5F97\u5B9C\uFF0C\u7559\u8457\u70BA\u4E86\u8B93\u81EA\u5DF1\u770B\u8D77\u4F86\u6BD4\u8F03\u6210\u719F\u7684\u843D\u816E\u9B0D\uFF0C\u5E74\u904E\u534A\u767E\u537B\u8EAB\u59FF\u4F9D\u820A\u633A\u62D4\uFF0C\u8209\u624B\u6295\u8DB3\u9593\u5145\u6EFF\u8457\u512A\u96C5\u8207\u5F9E\u5BB9\uFF0C\u4ED6\u662F\u672C\u5834\u5BB4\u6703\u7684\u4E3B\u4EBA\u5BB6--\u9818\u4E3B\u57C3\u723E\u6587\xB7\u4E9E\u65AF\u5FB7\u3002\r"
+  storyText: "\u4E00\u540D\u767D\u9AEE\u7684\u7537\u5B50\u7AD9\u5728\u5BB4\u6703\u5EF3\u7684\u9AD8\u8655\uFF0C\u82F1\u4FCA\u7684\u9762\u9F90\u4FDD\u990A\u5F97\u5B9C\uFF0C\u7559\u8457\u70BA\u4E86\u8B93\u81EA\u5DF1\u770B\u8D77\u4F86\u6BD4\u8F03\u6210\u719F\u7684\u843D\u816E\u9B0D\uFF0C\u5E74\u904E\u534A\u767E\u537B\u8EAB\u59FF\u4F9D\u820A\u633A\u62D4\uFF0C\u8209\u624B\u6295\u8DB3\u9593\u5145\u6EFF\u8457\u512A\u96C5\u8207\u5F9E\u5BB9\uFF0C"
   description: 
   character: {fileID: 1397542425}
   portrait: {fileID: 0}
@@ -10979,7 +10980,7 @@ MonoBehaviour:
     stringVal: 
   _duration:
     floatRef: {fileID: 0}
-    floatVal: 2
+    floatVal: 3
   easeType: 21
   loopType: 0
   stopPreviousTweens: 0
@@ -12914,6 +12915,33 @@ MonoBehaviour:
   volume: 1
   fadeDuration: 1
   waitUntilFinished: 1
+--- !u!114 &1722783158
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722782779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 382
+  indentLevel: 0
+  storyText: "\u4ED6\u662F\u672C\u5834\u5BB4\u6703\u7684\u4E3B\u4EBA\u5BB6--\u9818\u4E3B\u57C3\u723E\u6587\xB7\u4E9E\u65AF\u5FB7\u3002\r"
+  description: 
+  character: {fileID: 1397542425}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1729848978
 GameObject:
   m_ObjectHideFlags: 0
@@ -13079,7 +13107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb4254168d1182d4c8c02676cf0ef7b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b63e4dbbbe9f154bac38de3dae5d3b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13153,7 +13181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d2b753c7d1dc780429ed7ea823625e98, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37da66ca852dcb347944a3db000c51ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13297,7 +13325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a9a857a3321c6824bb010a90c0d1479c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9433b38cc664c9043b509efb6a2b579b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

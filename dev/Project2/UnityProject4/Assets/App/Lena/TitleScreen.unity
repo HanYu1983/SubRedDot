@@ -1170,6 +1170,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnBtnStartClick
       objectReference: {fileID: 0}
+    - target: {fileID: 6563791145174493668, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2894eed40321bb347b6ec4ca5ceb3886,
+        type: 3}
     - target: {fileID: 6563791145303339746, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
         type: 3}
       propertyPath: m_LocalPosition.x
