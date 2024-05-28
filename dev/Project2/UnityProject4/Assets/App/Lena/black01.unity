@@ -135,11 +135,11 @@ GameObject:
   - component: {fileID: 642514598}
   - component: {fileID: 642514589}
   - component: {fileID: 642514497}
-  - component: {fileID: 642514501}
   - component: {fileID: 642514496}
   - component: {fileID: 642514500}
   - component: {fileID: 642514503}
   - component: {fileID: 642514502}
+  - component: {fileID: 642514505}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -190,7 +190,7 @@ MonoBehaviour:
   - {fileID: 642514500}
   - {fileID: 642514503}
   - {fileID: 642514502}
-  - {fileID: 642514501}
+  - {fileID: 642514505}
   suppressAllAutoSelections: 1
 --- !u!114 &642514498
 MonoBehaviour:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 613.4927, y: -15.685342}
+  scrollPos: {x: 613.4927, y: -16.68534}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 279
@@ -219,7 +219,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 642514497}
   selectedCommands:
-  - {fileID: 642514503}
+  - {fileID: 642514505}
   variables:
   - {fileID: 642514550}
   - {fileID: 642514598}
@@ -250,7 +250,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &642514500
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -269,28 +269,9 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
---- !u!114 &642514501
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642514495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: opening
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
 --- !u!114 &642514502
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -308,7 +289,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &642514503
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -333,6 +314,25 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &642514505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642514495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: opening
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!114 &642514550
 MonoBehaviour:
   m_ObjectHideFlags: 2
