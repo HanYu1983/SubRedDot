@@ -46,6 +46,10 @@ public class SceneLoader : MonoBehaviour
 
         currentPage = page;
 
+        loadingPage.GetComponent<Animation>().Play();
+
+        yield return new WaitForSeconds(0.5f);
+
         loadingPage.SetActive(false);
     }
 }
