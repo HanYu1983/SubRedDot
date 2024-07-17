@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class PrefabLoader : MonoBehaviour
 {
@@ -24,5 +25,14 @@ public class PrefabLoader : MonoBehaviour
         {
             Debug.LogError("沒有指定預製件!");
         }
+    }
+
+    public IEnumerator DestroyPrefab()
+    {
+        if (currentInstance != null)
+        {
+            Destroy(currentInstance);
+        }
+        yield return null;
     }
 }

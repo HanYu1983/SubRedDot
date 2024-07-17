@@ -633,12 +633,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1043423240 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6563791145303339747, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
-    type: 3}
-  m_PrefabInstance: {fileID: 6563791145740405799}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1415784958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -990,7 +984,6 @@ MonoBehaviour:
   prefabToLoad: {fileID: 5955977203597921105, guid: bc24de6b02e047f4fb2a1b13e5aa0f45,
     type: 3}
   parentTransform: {fileID: 310558854}
-  mainCanvas: {fileID: 1043423240}
 --- !u!1 &1775503073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1193,10 @@ PrefabInstance:
     - target: {fileID: 1073365760, guid: d20aab9dfc7da4a46aaeaee2ef0feb59, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724727637, guid: d20aab9dfc7da4a46aaeaee2ef0feb59, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3286071397243049894, guid: d20aab9dfc7da4a46aaeaee2ef0feb59,
         type: 3}
