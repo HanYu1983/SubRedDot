@@ -6,23 +6,14 @@ using UnityEngine.UI;
 
 namespace Assets.App.Han
 {
-    public class BaseButton : MonoBehaviour//, IPointerDownHandler, IPointerUpHandler
+    public class BaseButton : Base
     {
-        /*public void OnPointerDown(PointerEventData eventData)
-        {
-            StartCoroutine(PerformAction());
-        }
-        public void OnPointerUp(PointerEventData eventData)
-        {
-            StartCoroutine(PerformAction());
-        }*/
-
         void Start()
         {
             AddEventListener();
         }
 
-        void AddEventListener()
+        private void AddEventListener()
         {
             var button = GetComponent<Button>();
             if(button != null)
@@ -39,24 +30,6 @@ namespace Assets.App.Han
                 {
                     StartCoroutine(PerformAction());
                 });
-            }
-        }
-
-        IEnumerator PerformMiddleware()
-        {
-            yield return null;
-        }
-
-        IEnumerator PerformAction()
-        {
-            //Debug.Log("PerformAction");
-            yield return PerformMiddleware();
-            var actions = GetComponents<IBaseButtonAction>();
-            for (var i = 0; i < actions.Length; ++i)
-            {
-                var action = actions[i];
-                //Debug.Log(action.GetType());
-                yield return action.Perform();
             }
         }
     }
