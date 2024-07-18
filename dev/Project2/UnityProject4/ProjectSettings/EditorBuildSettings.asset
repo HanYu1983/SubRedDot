@@ -5,21 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/App/Scenes/initPage.unity
-    guid: 37069017f90b6ee4f9b1dfa17682c7b2
-  - enabled: 0
-    path: Assets/App/Vic/scenes/mainPage.unity
-    guid: 5b0734bdc4993514d92637e645e954ed
-  - enabled: 0
-    path: Assets/App/Vic/scenes/gamePage.unity
-    guid: 8cdd9f9be4cd9fb43bc4e8ccd3e13ed0
-  - enabled: 0
-    path: Assets/App/Han/testScene.unity
-    guid: 80b06813da3ee40f08e6eab9189fbad0
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/App/Lena/TitleScreen.unity
     guid: 8f76d5c5b09700f47b52b2acd036224c
