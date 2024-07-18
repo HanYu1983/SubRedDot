@@ -4,7 +4,7 @@ using Fungus;
 
 namespace Assets.App.Han
 {
-    public class AutoSetActiveLanguageFromGameState : MonoBehaviour, IBaseButtonAction
+    public class SetActiveLanguageFromGameState : MonoBehaviour, IBaseButtonAction
     {
         public IEnumerator Perform()
         {
