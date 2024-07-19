@@ -28,7 +28,15 @@ namespace Assets.App.Han
             {
                 slider.onValueChanged.AddListener(value =>
                 {
-                    StartCoroutine(PerformAction());
+                    StartCoroutine(PerformFloatAction(value));
+                });
+            }
+            var dropdown = GetComponent<Dropdown>();
+            if (dropdown != null)
+            {
+                dropdown.onValueChanged.AddListener(value =>
+                {
+                    StartCoroutine(PerformIntAction(value));
                 });
             }
         }

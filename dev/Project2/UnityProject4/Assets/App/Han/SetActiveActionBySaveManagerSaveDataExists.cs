@@ -13,7 +13,6 @@ namespace Assets.App.Han
         {
             var saveManager = FungusManager.Instance.SaveManager;
             var isDataExists = saveManager.SaveDataExists(saveDataKey);
-            Debug.Log(isDataExists + ":" + saveDataKey);
             var isActive = isDataExists;
             gameObject.SetActive(isActive);
             yield return null;

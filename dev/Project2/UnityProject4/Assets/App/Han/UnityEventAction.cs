@@ -4,11 +4,11 @@ using UnityEngine.Events;
 
 namespace Assets.App.Han
 {
-    public class UnityEventAction : MonoBehaviour, IBaseButtonAction
+    public class UnityEventAction : AbstractBaseButtonAction
     {
         public UnityEvent OnClick;
 
-        public IEnumerator Perform()
+        public override IEnumerator Perform()
         {
             OnClick.Invoke();
             yield return null;

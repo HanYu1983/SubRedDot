@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Assets.App.Han
 {
-    public class ToggleFullScreen : MonoBehaviour, IBaseButtonAction
+    public class ToggleFullScreen : AbstractBaseButtonAction
     {
-        public IEnumerator Perform()
+        public override IEnumerator Perform()
         {
             Screen.fullScreen = !Screen.fullScreen;
             yield return null;

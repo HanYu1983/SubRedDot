@@ -4,9 +4,9 @@ using Fungus;
 
 namespace Assets.App.Han
 {
-    public class SetActiveLanguageFromGameState : MonoBehaviour, IBaseButtonAction
+    public class SetActiveLanguageFromGameState : AbstractBaseButtonAction
     {
-        public IEnumerator Perform()
+        public override IEnumerator Perform()
         {
             var localization = GetComponent<Localization>();
             if (localization == null)

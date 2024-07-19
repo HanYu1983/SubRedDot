@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.App.Han
 {
-    public class OnCustomAction : MonoBehaviour, IBaseButtonAction
+    public class OnCustomAction : AbstractBaseButtonAction
     {
         public bool onStart;
         public bool onAwake;
         public bool onUpdate;
+        public bool onValueChanged;
         
         private void Awake()
         {
+            AddValueChangeListenerIfNeeded();
             if (onAwake)
             {
                 StartCoroutine(Perform());
@@ -35,14 +38,32 @@ namespace Assets.App.Han
             }
         }
 
-        public bool isCustomCall()
+        private void AddValueChangeListenerIfNeeded()
         {
-            return onStart || onAwake || onUpdate;
+            if (onValueChanged)
+            {
+                var slider = GetComponent<Slider>();
+                if (slider != null)
+                {
+                    slider.onValueChanged.AddListener(value =>
+                    {
+                        StartCoroutine(PerformFloat(value));
+                    });
+                }
+                var dropdown = GetComponent<Dropdown>();
+                if (dropdown != null)
+                {
+                    dropdown.onValueChanged.AddListener(value =>
+                    {
+                        StartCoroutine(PerformInt(value));
+                    });
+                }
+            }
         }
 
-        public virtual IEnumerator Perform()
+        public bool isCustomCall()
         {
-            throw new System.NotImplementedException();
+            return onStart || onAwake || onUpdate || onValueChanged;
         }
     }
 }

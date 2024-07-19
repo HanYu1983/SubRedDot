@@ -4,16 +4,16 @@ using UnityEngine.UI;
 
 namespace Assets.App.Han
 {
-    public class SetMusicVolumeAction : MonoBehaviour, IBaseButtonAction
+    public class SetMusicVolumeAction : AbstractBaseButtonAction
     {
-        public IEnumerator Perform()
+        public override IEnumerator PerformFloat(float value)
         {
-            var slider = GetComponent<Slider>();
+            /*var slider = GetComponent<Slider>();
             if(slider == null)
             {
                 Debug.LogWarning("slider not found");
                 yield break;
-            }
+            }*/
             var gameState = FindObjectOfType<GameState>();
             if(gameState == null)
             {
@@ -26,7 +26,7 @@ namespace Assets.App.Han
                 Debug.LogWarning("musicAudioSource not found");
                 yield break;
             }
-            musicAudioSource.volume = slider.value;
+            musicAudioSource.volume = value;
         }
     }
 }

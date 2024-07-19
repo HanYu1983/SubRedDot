@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Assets.App.Han
 {
-    public class ClosePrefabLoaderAction : MonoBehaviour, IBaseButtonAction
+    public class ClosePrefabLoaderAction : AbstractBaseButtonAction
     {
-        public IEnumerator Perform()
+        public override IEnumerator Perform()
         {
             var targets = Resources.FindObjectsOfTypeAll<PrefabLoader>();
             for(var i=0; i<targets.Length; ++i)

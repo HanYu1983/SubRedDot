@@ -7,5 +7,8 @@ namespace Assets.App.Han
     public interface IBaseButtonAction
     {
         IEnumerator Perform();
+        IEnumerator PerformInt(int v);
+        IEnumerator PerformFloat(float v);
+        IEnumerator PerformString(string v);
     }
 }
