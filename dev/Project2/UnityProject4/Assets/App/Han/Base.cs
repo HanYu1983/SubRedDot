@@ -18,7 +18,11 @@ namespace Assets.App.Han
             for (var i = 0; i < actions.Length; ++i)
             {
                 var action = actions[i];
-                //Debug.Log(action.GetType());
+                var baseAction = action as AbstractBaseButtonAction;
+                if (baseAction != null && baseAction.isCustomCall())
+                {
+                    continue;
+                }
                 yield return action.Perform();
             }
         }
