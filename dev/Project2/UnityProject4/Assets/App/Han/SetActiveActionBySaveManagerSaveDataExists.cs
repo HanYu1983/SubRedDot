@@ -4,7 +4,7 @@ using Fungus;
 
 namespace Assets.App.Han
 {
-    public class SetActiveActionBySaveManagerSaveDataExists : AbstractBaseButtonAction
+    public class SetActiveActionBySaveManagerSaveDataExists : OnCustomAction
     {
         [SerializeField] 
         protected string saveDataKey = FungusConstants.DefaultSaveDataKey;

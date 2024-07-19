@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
+using Assets.App.Han;
 
 public class UIButtonSound : MonoBehaviour, IPointerEnterHandler
 {
@@ -13,14 +14,21 @@ public class UIButtonSound : MonoBehaviour, IPointerEnterHandler
     //get button component
     private Button button { get { return GetComponent<Button>(); } }
     // get audiosource
-    private AudioSource source { get { return GetComponent<AudioSource>(); } }
+    private AudioSource source { 
+        get {
+            var gameState = FindObjectOfType<GameState>();
+            if(gameState == null)
+            {
+                throw new UnityException("gameState not found");
+            }
+            return gameState.soundEffectAudioSource;
+        } 
+    }
 
 
     void Start()
 
     {
-        //bind an AudioSource on its
-        gameObject.AddComponent<AudioSource>();
         //set default sound
         source.clip = HoverSound;
 

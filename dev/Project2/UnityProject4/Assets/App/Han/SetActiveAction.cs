@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.App.Han
 {
-    public class SetActiveAction : AbstractBaseButtonAction
+    public class SetActiveAction : OnCustomAction
     {
         public bool isActive;
 

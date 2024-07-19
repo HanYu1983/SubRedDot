@@ -18,7 +18,7 @@ namespace Assets.App.Han
             for (var i = 0; i < actions.Length; ++i)
             {
                 var action = actions[i];
-                var baseAction = action as AbstractBaseButtonAction;
+                var baseAction = action as OnCustomAction;
                 if (baseAction != null && baseAction.isCustomCall())
                 {
                     continue;

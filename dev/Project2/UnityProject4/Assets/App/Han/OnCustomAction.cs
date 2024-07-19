@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.App.Han
 {
-    public class AbstractBaseButtonAction : MonoBehaviour, IBaseButtonAction
+    public class OnCustomAction : MonoBehaviour, IBaseButtonAction
     {
         public bool onStart;
         public bool onAwake;

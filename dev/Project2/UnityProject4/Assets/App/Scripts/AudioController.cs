@@ -22,7 +22,7 @@ public class AudioController : MonoBehaviour
     public void PlayAudioById(int id)
     {
         audioSource.clip = audios[id];
-        audioSource.Play();
+        //audioSource.Play();
     }
 
 }
