@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 namespace Assets.App.Han
 {
@@ -8,12 +9,6 @@ namespace Assets.App.Han
     {
         public override IEnumerator PerformFloat(float value)
         {
-            /*var slider = GetComponent<Slider>();
-            if(slider == null)
-            {
-                Debug.LogWarning("slider not found");
-                yield break;
-            }*/
             var gameState = FindObjectOfType<GameState>();
             if(gameState == null)
             {

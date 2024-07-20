@@ -12,13 +12,13 @@ namespace Assets.App.Han
             if (localization == null)
             {
                 Debug.LogWarning("localization not found");
-                yield return null;
+                yield break;
             }
             var gameState = FindObjectOfType<GameState>();
             if (gameState == null)
             {
                 Debug.LogWarning("gameState not found");
-                yield return null;
+                yield break;
             }
             localization.SetActiveLanguage(gameState.languageCode, true);
         }

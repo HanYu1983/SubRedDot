@@ -9,12 +9,6 @@ namespace Assets.App.Han
         public AudioSource target;
         public override IEnumerator PerformFloat(float value)
         {
-           /* var slider = GetComponent<Slider>();
-            if(slider == null)
-            {
-                Debug.LogWarning("slider not found");
-                yield return null;
-            }*/
             if (target != null)
             {
                 target.volume = value;
