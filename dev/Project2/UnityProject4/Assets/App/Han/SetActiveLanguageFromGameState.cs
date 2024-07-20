@@ -6,9 +6,12 @@ namespace Assets.App.Han
 {
     public class SetActiveLanguageFromGameState : AbstractBaseButtonAction
     {
+        private void FixedUpdate()
+        {
+            StartCoroutine(Perform());
+        }
         public override IEnumerator Perform()
         {
-            Debug.Log("XXX");
             var localization = GetComponent<Localization>();
             if (localization == null)
             {
@@ -21,7 +24,6 @@ namespace Assets.App.Han
                 Debug.LogWarning("gameState not found");
                 yield break;
             }
-            Debug.Log("XXX2");
             localization.SetActiveLanguage(gameState.languageCode, true);
         }
     }
