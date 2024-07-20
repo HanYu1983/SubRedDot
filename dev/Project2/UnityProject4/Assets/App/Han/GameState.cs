@@ -15,10 +15,22 @@ namespace Assets.App.Han
         public AudioSource soundEffectAudioSource;
         public AudioSource ambianceAudioSource;
         public AudioSource musicAudioSource;
+        public Flowchart flowchat;
         
         private void Awake()
         {
             AssignFungusInstance();
+        }
+        // flowchat中呼叫
+        public void OnFungusLoadVariable()
+        {
+            AssignFungusVariable();
+        }
+
+        private void AssignFungusVariable()
+        {
+            flowchat = GetComponent<Flowchart>();
+            languageCode = flowchat.GetStringVariable("LanguageCode");
         }
 
         private void AssignFungusInstance()
@@ -42,6 +54,8 @@ namespace Assets.App.Han
                 default:
                     throw new UnityException("unknown Language");
             }
+            flowchat.SetStringVariable("LanguageCode", languageCode);
+            flowchat.SendFungusMessage("SaveLanguageCodeOnMessage");
         }
         public Language GetLanguage()
         {
