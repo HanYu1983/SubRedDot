@@ -15,10 +15,10 @@ namespace Fungus
     public class SaveMenu : MonoBehaviour 
     {
         [Tooltip("The string key used to store save game data in Player Prefs. If you have multiple games defined in the same Unity project, use a unique key for each one.")]
-        [SerializeField] protected string saveDataKey = FungusConstants.DefaultSaveDataKey;
+        [SerializeField] public string saveDataKey = FungusConstants.DefaultSaveDataKey;
 
         [Tooltip("Automatically load the most recently saved game on startup")]
-        [SerializeField] protected bool loadOnStart = true;
+        [SerializeField] public bool loadOnStart = true;
 
         [Tooltip("Automatically save game to disk after each Save Point command executes. This also disables the Save and Load menu buttons.")]
         [SerializeField] protected bool autoSave = false;
@@ -56,7 +56,7 @@ namespace Fungus
 
         protected LTDescr fadeTween;
 
-        protected static SaveMenu instance;
+        public static SaveMenu instance;
 
         protected static bool hasLoadedOnStart = false;
 
