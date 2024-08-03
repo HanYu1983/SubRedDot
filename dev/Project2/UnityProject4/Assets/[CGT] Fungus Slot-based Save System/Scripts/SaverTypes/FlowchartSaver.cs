@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
-using System.Linq;
+using UnityEngine.SceneManagement;
 
 namespace CGTUnity.Fungus.SaveSystem
 {
@@ -37,6 +37,19 @@ namespace CGTUnity.Fungus.SaveSystem
                 }
                 flowcharts.Add(f);
             }  
+        }
+
+        void onSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (mode == LoadSceneMode.Single)
+            {
+                GetAllFlowchart();
+            }
+        }
+
+        void Start()
+        {
+            SceneManager.sceneLoaded += onSceneLoaded;
         }
 
         #region Methods
