@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.App.Han
 {
-    public class DontDestroyOnLoad : MonoBehaviour
+    public class DontDestroyOnLoadHan : MonoBehaviour
     {
         private void Awake()
         {

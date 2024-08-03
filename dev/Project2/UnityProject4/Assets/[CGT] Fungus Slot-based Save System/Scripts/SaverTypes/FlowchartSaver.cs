@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using System.Linq;
 
 namespace CGTUnity.Fungus.SaveSystem
 {
@@ -12,7 +13,31 @@ namespace CGTUnity.Fungus.SaveSystem
     {
 
         [Tooltip("A list of Flowchart objects whose variables will be encoded in the save data. Boolean, Integer, Float and String variables are supported.")]
-        [SerializeField] protected Flowchart[] flowcharts = null;
+        [SerializeField] protected List<Flowchart> flowcharts = null;
+
+        [ContextMenu("GetAllFlowchart")]
+        // 每進一個新場景要呼叫這個抓出新場景所有的flowcharts才能正確記錄
+        void GetAllFlowchart()
+        {
+            flowcharts.Clear();
+
+            var fs = Resources.FindObjectsOfTypeAll<Flowchart>();
+
+            foreach(var f in fs)
+            {
+                // 去掉重復的
+                if (flowcharts.Contains(f))
+                {
+                    continue;
+                }
+                // 去掉UIActionHandler, 不然讀取時會出問題
+                if (f.gameObject.name == "UIActionHandler")
+                {
+                    continue;
+                }
+                flowcharts.Add(f);
+            }  
+        }
 
         #region Methods
 
@@ -29,9 +54,9 @@ namespace CGTUnity.Fungus.SaveSystem
         /// </summary>
         public virtual IList<FlowchartData> CreateSaves()
         {
-            var saveGroup = new FlowchartData[flowcharts.Length];
+            var saveGroup = new FlowchartData[flowcharts.Count];
 
-            for (int i = 0; i < flowcharts.Length; i++)
+            for (int i = 0; i < flowcharts.Count; i++)
             {
                 var flowchart = flowcharts[i];
                 if (flowchart == null) 
