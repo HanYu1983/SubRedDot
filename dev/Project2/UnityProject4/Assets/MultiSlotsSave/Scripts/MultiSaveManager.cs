@@ -366,7 +366,7 @@ public class MultiSaveManager : MonoBehaviour {
         var jsonData = string.Empty;
         SaveGameInfo gameData =null;
 #if UNITY_WEBPLAYER || UNITY_WEBGL
-            historyData = PlayerPrefs.GetString(key);
+        jsonData = PlayerPrefs.GetString(key);
 #else
         var fullFilePath = GetFullFilePath(key);
         if (System.IO.File.Exists(fullFilePath))
