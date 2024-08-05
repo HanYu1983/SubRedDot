@@ -265,6 +265,7 @@ public class MultiSaveManager : MonoBehaviour {
                 gameInfoData.Add(i, data);
             }
         }
+        UIGameMenu.Instance.UpdateGameDataSlots();
     }    
     public void SaveGame(int slot, SaveGameInfo oldInfo)
     {
@@ -413,10 +414,11 @@ public class MultiSaveManager : MonoBehaviour {
     }
     IEnumerator HandleSaveMenuTimer()
     {
+        while (SaveMenu.instance == null)
+        {
+            yield return new WaitForSeconds(1);
+        }
         var menu = SaveMenu.instance;
-
-        while (menu == null)
-            yield return null;
 
         menu.loadOnStart = false;
         menu.saveDataKey = CreateGameDataKey(autosaveSlotNum);
