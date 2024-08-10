@@ -18,6 +18,11 @@ namespace Assets.App.Han
             for (var i = 0; i < actions.Length; ++i)
             {
                 var action = actions[i];
+                var mono = action as MonoBehaviour;
+                if (mono != null && mono.enabled == false)
+                {
+                    continue;
+                }
                 var baseAction = action as OnCustomAction;
                 if (baseAction != null && baseAction.isCustomCall())
                 {
@@ -35,6 +40,11 @@ namespace Assets.App.Han
             for (var i = 0; i < actions.Length; ++i)
             {
                 var action = actions[i];
+                var mono = action as MonoBehaviour;
+                if (mono != null && mono.enabled == false)
+                {
+                    continue;
+                }
                 var baseAction = action as OnCustomAction;
                 if (baseAction != null && baseAction.isCustomCall())
                 {
@@ -51,6 +61,11 @@ namespace Assets.App.Han
             for (var i = 0; i < actions.Length; ++i)
             {
                 var action = actions[i];
+                var mono = action as MonoBehaviour;
+                if (mono != null && mono.enabled == false)
+                {
+                    continue;
+                }
                 var baseAction = action as OnCustomAction;
                 if (baseAction != null && baseAction.isCustomCall())
                 {
@@ -67,6 +82,11 @@ namespace Assets.App.Han
             for (var i = 0; i < actions.Length; ++i)
             {
                 var action = actions[i];
+                var mono = action as MonoBehaviour;
+                if (mono != null && mono.enabled == false)
+                {
+                    continue;
+                }
                 var baseAction = action as OnCustomAction;
                 if (baseAction != null && baseAction.isCustomCall())
                 {

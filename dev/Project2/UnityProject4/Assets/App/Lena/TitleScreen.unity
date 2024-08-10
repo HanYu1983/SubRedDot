@@ -2796,8 +2796,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 763105536}
   m_HandleRect: {fileID: 763105535}
   m_Direction: 2
-  m_Value: 1.0000002
-  m_Size: 0.57359695
+  m_Value: 1
+  m_Size: 0.507681
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5549,16 +5549,16 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 247794636}
-        m_MethodName: Load
-        m_Mode: 1
+      - m_Target: {fileID: 1670686278}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1060812689
 MonoBehaviour:
@@ -5579,7 +5579,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060812682}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58a82a30e6ef7284fa70b2c416edeee4, type: 3}
   m_Name: 
@@ -5599,6 +5599,10 @@ PrefabInstance:
     - target: {fileID: 1156102098262066, guid: 94937d82f6f86814c87a91cb9ca5086d, type: 3}
       propertyPath: m_Name
       value: GameMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1156102098262066, guid: 94937d82f6f86814c87a91cb9ca5086d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1489079266830604, guid: 94937d82f6f86814c87a91cb9ca5086d, type: 3}
       propertyPath: m_IsActive
